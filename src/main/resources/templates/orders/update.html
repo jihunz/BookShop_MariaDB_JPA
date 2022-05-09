@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<div>
+		<form method="post">
+			<div>
+				<label>고객번호</label>
+				<input name="custid" type="number" th:value="${item.custid}"/>
+			</div>
+			<div>
+				<label>구매 금액</label>
+				<input name="saleprice" type="number" th:value="${item.saleprice}"/>
+			</div>
+			<button>변경</button>
+			<a href="../list"><button type="button">취소</button></a>
+		</form>
+	</div>
+</body>
+</html>
