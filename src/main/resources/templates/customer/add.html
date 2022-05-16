@@ -6,21 +6,32 @@
 </head>
 <body>
 	<div>
+		<h1>고객 등록</h1>
 		<form method="post">
 			<div>
-				<label>이름</label>
-				<input name="name" type="text"/>
+				<!-- 
+				<div>
+					<label>고객번호:</label>
+					<input name="custid" type="number">
+				</div>
+				 -->
+				<div>
+					<label>성명:</label>
+					<input name="name" type="text">
+				</div>
+				<div>
+					<label>주소:</label>
+					<input name="address" type="text">
+				</div>
+				<div>
+					<label>전화번호:</label>
+					<input name="phone" type="text">
+				</div>
+				<div>
+					<button>등록</button>
+					<a href="../list"><button type="button">취소</button></a>
+				</div>
 			</div>
-			<div>
-				<label>주소</label>
-				<input name="address" type="text"/>
-			</div>
-			<div>
-				<label>전화번호</label>
-				<input name="phone" type="number"/>
-			</div>
-			<button>등록</button>
-			<a href="list"><button type="button">취소</button></a>
 		</form>
 	</div>
 </body>
